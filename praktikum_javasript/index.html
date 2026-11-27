@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Ini Belajar Js</h1>
+
+    <script>
+        const name= "dhias rahma aindira";
+        let umur = 18;
+        let nilai = 90;
+        let aktif = true; 
+
+        console.log("nama", name); 
+        console.log("umur", umur); 
+        console.log("nilai", nilai);  
+        console.log("status aktif", aktif); 
+        console.log("tipe nilai", typeof nilai);  
+
+        const tugas = 80;
+        const uts = 7
+        const uas = 90;
+        const akhir = tugas * 0.30 + uts * 0.30 + uas * 0.40; 
+
+        console.log("Nilai Akhir", akhir); 
+        console.log("lulus:", akhir >= 60);  
+
+       
+        const nilai2 = 78;
+        let kategori; 
+
+        if (nilai2 >= 85 ) { 
+            kategori = "A"; 
+        }   
+        else if (nilai2 >= 70) { 
+            kategori = "B";
+        }
+        else if (nilai2 >= 60) {
+            kategori = "C";
+        } 
+        else { 
+            kategori = "D"; 
+        }
+
+        console.log("nilai", nilai2); 
+        console.log("kategori", kategori); 
+
+        
+        function hitungDiskon(harga, persen) { 
+            return harga - (harga * persen / 100); 
+        }
+
+        for (let i = 1; i <= 3; i++) {
+            const harga = i * 10000; 
+            const bayar = hitungDiskon(harga, 10); 
+            console.log("barang", i, "Harga:", harga, "Bayar:", bayar)
+        } 
+
+        console.log("=== 5. Pengolah Nilai Mahasiswa ===");
+
+        const namaMahasiswa = "Dhias Rahma Aindira";
+        const nilaiTugas = 80;
+        const nilaiUTS = 70;
+        const nilaiUAS = 90;
+
+        const nilaiAkhir =
+            nilaiTugas * 0.30 +
+            nilaiUTS * 0.30 +
+            nilaiUAS * 0.40;
+
+        let statusKelulusan;
+
+        if (nilaiAkhir >= 60) {
+            statusKelulusan = "LULUS";       
+        } else {
+            statusKelulusan = "TIDAK LULUS";
+        }
+
+        console.log("Nama Mahasiswa:", namaMahasiswa);
+        console.log("Nilai Tugas:", nilaiTugas);
+        console.log("Nilai UTS:", nilaiUTS);
+        console.log("Nilai UAS:", nilaiUAS);
+        console.log("Nilai Akhir:", nilaiAkhir);
+        console.log("Status Kelulusan:", statusKelulusan);
+
+    </script>
+
+</body>
+</html>
